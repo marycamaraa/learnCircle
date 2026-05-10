@@ -1,28 +1,24 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+
+import NavBar from './components/NavBar'
+
 import Home from './pages/Home'
 import Articles from './pages/Articles'
-import GraphicsAutomation from './pages/GraphicAutomation'
+import GraphicsAutomation from './pages/GraphicsAutomation'
 
 import './App.css'
 
-const App = () => {
+function App() {
   return (
-    <>
-      <BrowserRouter>
-        {/* Navigation */}
-        <nav>
-          <link to="./pages/Home">Home</link>
-          <link to="./pages/Articles">Articles</link>
-          <link to="./pages/GraphicAutomation">Graphics and Automation</link>
-        </nav>
+    <BrowserRouter>
+      <NavBar />
 
-        {/* Routes */}
-        <Routes>
-          <Route path="Home" element={<Home />} />
-          <Route path='Articles' element={<Articles />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/articles" element={<Articles />} />
+        <Route path="/GraphicsAutomation" element={<GraphicsAutomation />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

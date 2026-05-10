@@ -7,9 +7,9 @@ const Header = () => {
   return (
     <>
       <div className="top-nav">
-        <a href="Home"> Home</a>
-        <a href="Articles">Articles</a>
-        <a href="GraphicAutomation">Graphic & Automation</a>
+        <a href="home"> Home</a>
+        <a href="articles">Articles</a>
+        <a href="graphicAutomation">Graphic & Automation</a>
       </div>
     </>
   )
