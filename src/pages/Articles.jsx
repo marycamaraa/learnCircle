@@ -1,9 +1,11 @@
+import ArticlesNavbar from '../components/ArticlesNavbar'
 import ArticlesSection from '../components/ArticlesSection'
 
 function Articles() {
   return (
     <>
-      <ArticlesSection />
+      <ArticlesNavbar />
+      {/* <ArticlesSection /> */}
     </>
   )
 }

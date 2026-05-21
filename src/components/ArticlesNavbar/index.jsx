@@ -1,10 +1,18 @@
 import { Link } from 'react-router-dom'
+import logo from '../../assets/logo.png'
+import notification from '../../assets/notification.png'
 import './index.css'
 
 function ArticlesNavbar() {
   return (
-    <nav>
-      <ul>
+    <nav className="articles-navbar-container">
+      <Link to="/">
+        <img className="logo" src={logo} />{' '}
+      </Link>
+      <Link to="/">
+        <img className="notification-icon" src={notification} />
+      </Link>
+      <ul className="nav-links">
         <li>
           <Link to="/home">Home</Link>
           {''}
