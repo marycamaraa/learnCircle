@@ -13,14 +13,18 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <NavBar />
+        <div className="app-layout">
+          <NavBar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/articles" element={<Articles />} />
-          <Route path="/GraphicsAutomation" element={<GraphicsAutomation />} />
-        </Routes>
-        <Footer />
+          <main className="page-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/articles" element={<Articles />} />
+              <Route path="/GraphicsAutomation" element={<GraphicsAutomation />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </BrowserRouter>
     </>
   )

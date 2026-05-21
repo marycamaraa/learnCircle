@@ -1,0 +1,26 @@
+.home-title {
+  color: blue;
+}
+
+.home-container {
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.articles-section {
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  color: green;
+  background-color: #2c63ee11;
+  border-radius: 10px;
+}
+
+.graphic-automation-section {
+  height: 400px;
+  width: 400px;
+  color: red;
+  background-color: #ee2cc411;
+  border-radius: 10px;
+}
