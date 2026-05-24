@@ -1,5 +1,5 @@
 // import Home from '../../pages/Home'
-import Articles from '../../pages/Articles'
+import Articles from '../../pages/Articles/Articles'
 // import GraphicAutomation from '../../pages/GraphicAutomation'
 // import '.index.css'
 

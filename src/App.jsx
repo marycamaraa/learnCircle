@@ -1,11 +1,11 @@
-import NavBar from './components/NavBar'
+import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
-import Home from './pages/Home'
-import Articles from './pages/Articles'
-import GraphicsAutomation from './pages/GraphicsAutomation'
+import Home from './pages/Home/Home'
+import Articles from './pages/Articles/Articles'
+import GraphicsAutomation from './pages/GraphicsAutomation/GraphicsAutomation'
 
 import './App.css'
 
@@ -14,7 +14,7 @@ function App() {
     <>
       <BrowserRouter>
         <div className="app-layout">
-          <NavBar />
+          <Navbar />
 
           <main className="page-content">
             <Routes>
