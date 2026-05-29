@@ -1,0 +1,23 @@
+.graphics-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.graphics-nav-items {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.graphics-nav-items a {
+  color: #000000;
+  text-decoration: none;
+  font: 18px;
+  font-weight: 200px;
+}
+
+.graphics-nav-items a:hover {
+  color: blue;
+}
