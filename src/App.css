@@ -2,7 +2,6 @@ html,
 body {
   margin: 0;
   height: 100%;
-  
 }
 #root {
   height: 100%;
@@ -20,10 +19,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.top-background-color {
-  background-color: rgb(122, 73, 14);
 }
 
 .title {
