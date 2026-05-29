@@ -1,9 +1,12 @@
-import GraphicsNavbar from '../components/GraphicsNavbar'
+import GraphicsNavbar from '../../components/GraphicsNavbar'
+import styles from './Graphics.module.css'
+
 function GraphicsAutomation() {
   return (
     <>
-      <h1>Graphic & Automation </h1>
-      <GraphicsNavbar />
+      <div className={styles.layout}>
+        <GraphicsNavbar />
+      </div>
     </>
   )
 }

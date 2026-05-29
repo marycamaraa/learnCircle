@@ -1,12 +1,20 @@
+body {
+  margin: 0;
+}
 .graphics-navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   padding: 20px 40px;
   border-bottom: 1px solid #ccc;
+  width: 95vw; /* viewport width = full page width */
 }
 
 .graphics-nav-items {
   display: flex;
+  text-align: center;
+  margin: 0;
+  padding: 0;
   gap: 30px;
   list-style: none;
 }
