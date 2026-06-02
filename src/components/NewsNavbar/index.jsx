@@ -10,28 +10,28 @@ function NewsNavbar() {
       <nav className="news-navbar">
         <ul className="nav-items">
           <li>
-            <Link to="/home">Home</Link>
+            <Link to="/home">Home |</Link>
           </li>
           <li>
-            <Link to="/world">World</Link>
+            <Link to="/world">World |</Link>
           </li>
           <li>
-            <Link to="/business">Business</Link>
+            <Link to="/business">Business |</Link>
           </li>
           <li>
-            <Link to="/culture">Culture</Link>
+            <Link to="/culture">Culture |</Link>
           </li>
           <li>
-            <Link to="/politics">Politics</Link>
+            <Link to="/politics">Politics |</Link>
           </li>
           <li>
-            <Link to="/Health">Health</Link>
+            <Link to="/Health">Health |</Link>
           </li>
           <li>
-            <Link to="/tech">Tech</Link>
+            <Link to="/tech">Tech |</Link>
           </li>
           <li>
-            <Link to="/inDepth">inDepth</Link>
+            <Link to="/inDepth">inDepth |</Link>
           </li>
         </ul>
       </nav>
