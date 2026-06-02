@@ -22,6 +22,14 @@ const HomeSection = () => {
             <li>Kubernetes</li>
           </ul>
         </div>
+        <div className="project-base-section">
+          <h1> Project Base </h1>
+          <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+          </ul>
+        </div>
         <div />
       </div>
     </>

@@ -17,6 +17,9 @@ function Navbar() {
         <li>
           <Link to="/graphicsAutomation">Graphics & Automation</Link>
         </li>
+        <li>
+          <Link to="/projectBaseSection">Project Base</Link>
+        </li>
       </ul>
     </nav>
   )

@@ -1,5 +1,6 @@
 import ArticlesNavbar from '../../components/ArticlesNavbar'
 import ArticlesSection from '../../components/ArticlesSection'
+import Footer from '../../components/Footer'
 import NewsNavbar from '../../components/NewsNavbar'
 import styles from './Article.module.css'
 
@@ -9,6 +10,7 @@ function Articles() {
       <ArticlesNavbar />
       <NewsNavbar />
       <ArticlesSection />
+      <Footer />
     </div>
   )
 }
