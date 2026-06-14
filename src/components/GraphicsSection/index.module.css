@@ -1,0 +1,50 @@
+.container {
+  background-color: #383838;
+  max-width: 700px;
+  border-radius: 5px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.input {
+  width: 100px;
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.button {
+  padding: 12px 20px;
+}
+.toDoList {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.toDoListItem {
+  color: #fff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.deleteButton {
+  padding: 8px 12px;
+  cursor: pointer;
+
+}
