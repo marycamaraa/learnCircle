@@ -14,7 +14,7 @@ function GraphicsSections() {
       text: task,
       completed: false,
     }
-    setTasks([...tasks, task]) // spread operator copies all existing items and add new task
+    setTasks([...tasks, newTask]) // spread operator copies all existing items and add new task
     setTask('') // clears the input field after adding task
   }
 
@@ -23,9 +23,9 @@ function GraphicsSections() {
     setTasks(tasks.filter((task) => task.id !== id))
   }
 
-  const toggleTask = (id) => {
-    setTasks(tasks.map((task) => (task.id === id ? { ...task, completed: !task.completed } : task)))
-  }
+  // const toggleTask = (id) => {
+  //   setTasks(tasks.map((task) => (task.id === id ? { ...task, completed: !task.completed } : task)))
+  // }
 
   return (
     <div className={styles.container}>
@@ -54,7 +54,7 @@ function GraphicsSections() {
           {tasks.map((task) => (
             <li key={task.id} className={styles.toDoItem}>
               <div className={styles.taskcontent}>
-                <input type="checkout" checked={task.completed} onChange={() => toggleTask(task.id)}></input>
+                <input type="text" value={task} onChange={(error) => setTask(error.target.value)}></input>
                 <span className={task.completed ? styles.completed : ''}> {task.text} </span>
               </div>
               <button className={styles.deleteButton} onClick={() => deleteTask(task.id)}>
