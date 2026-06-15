@@ -24,27 +24,43 @@
   font-size: 16px;
 }
 
-.button {
+.addButton {
   padding: 12px 20px;
+  cursor: pointer;
 }
 .toDoList {
-  display: flex;
   list-style: none;
   gap: 5px;
   padding: 0;
   margin: 0;
 }
 
-.toDoListItem {
-  color: #fff;
+.toDoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   padding: 12px;
   margin-bottom: 10px;
+
   border: 1px solid #ccc;
   border-radius: 8px;
+}
+
+.taskContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .deleteButton {
   padding: 8px 12px;
   cursor: pointer;
+}
 
+.taskCount {
+  color: #ccc;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
 }

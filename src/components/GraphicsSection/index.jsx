@@ -19,30 +19,51 @@ function GraphicsSections() {
   }
 
   //delete function
-  const deleteTask = (indexToDelete) => {
-    setTasks(tasks.filter((_, index) => index !== indexToDelete))
+  const deleteTask = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id))
   }
+
+  const toggleTask = (id) => {
+    setTasks(tasks.map((task) => (task.id === id ? { ...task, completed: !task.completed } : task)))
+  }
+
   return (
     <div className={styles.container}>
       <h2 className={styles.heading}> To Do List</h2>
       <div className={styles.inputContainer}>
-        <input type="text" value={task} onChange={(e) => setTask(e.target.value)} placeholder="enter a task" />
-        <button className={styles.button} onClick={addTask}>
+        <input
+          className={styles.input}
+          type="text"
+          placeholder="Add a task...."
+          value={task}
+          onChange={(error) => setTask(error.target.value)}
+          onKeyDown={(error) => {
+            if (error.key === 'Enter') {
+              addTask()
+            }
+          }}
+        />
+        <button className={styles.addButton} onClick={addTask}>
           Add
         </button>
       </div>
       <div className="items-container">
         <div />
+
         <ul className={styles.toDoList}>
-          {tasks.map((item, index) => (
-            <li className={styles.toDoListItem} key={index}>
-              <span> {item} </span>
-              <button className={styles.deleteButton} onClick={() => deleteTask(index)}>
+          {tasks.map((task) => (
+            <li key={task.id} className={styles.toDoItem}>
+              <div className={styles.taskcontent}>
+                <input type="checkout" checked={task.completed} onChange={() => toggleTask(task.id)}></input>
+                <span className={task.completed ? styles.completed : ''}> {task.text} </span>
+              </div>
+              <button className={styles.deleteButton} onClick={() => deleteTask(task.id)}>
                 Delete
               </button>
             </li>
           ))}
         </ul>
+        <p className={styles.taskCount}>Total Tasks: {tasks.length}</p>
       </div>
     </div>
   )
